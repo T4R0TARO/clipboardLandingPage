@@ -12,11 +12,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+ 
 
 ## Overview
 
@@ -28,84 +24,95 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/76195521/133682829-9b8c2148-5056-4c0f-9d4b-6d972dcbc197.png)
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![image](https://user-images.githubusercontent.com/76195521/133682918-20608c88-6544-4542-afab-4d05153ecbd1.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Git Repo](https://github.com/T4R0TARO/clipboardLandingPage)
+- Live Site URL: [Git Pages](https://t4r0taro.github.io/clipboardLandingPage/)
 
 ## My process
+1. HTML STRUCTURE (Layout)
+2. CSS (Base Styles and Layout)
+3. CSS (Mobile Stlyes)
+4. CSS (Desktop Styles)
+5. Adjust Padding and Margin 
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
+Footer
 ```html
-<h1>Some HTML code I'm proud of</h1>
+     <footer class="mainfooter"> 
+       <img src="./images/logo.svg" alt="logo icon">
+       
+       <div class="footerLinks">
+        <a href="#">FAQs</a>
+        <a id="marginFix"href="#">Privacy Policy</a>
+        <a href="#">Install Guide</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Press Kit</a>
+       </div>
+       
+       <div class="socialIcons">
+         <a href="https://www.facebook.com/login/"><i class="icon fab fa-facebook-square fa-lg"></i></a>
+         <a href="https://twitter.com/?lang=en"><i class="icon fab fa-twitter fa-lg"></i></a>
+         <a href="https://www.instagram.com/accounts/login/"><i class="icon fab fa-instagram fa-lg"></i></a>
+       </div>
+       
+     </footer> 
 ```
+Media Query for Desktop Style
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@media screen and (min-width: 1025px){
+/* Hero Desktop */
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0.74)), url(.././images/bg-header-desktop.png);
+    background-size: cover;
+    width: 100%;
+}
+/* Desktop Layout */
+button {
+    margin-left: 20px;
+}
+.topButtons, .botButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+  .colImgContainer {
+    display: flex;
+    flex-direction: row;
+    
+}
+  .colContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 100px;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Joshua Manansala](https://github.com/T4R0TARO)
+- Frontend Mentor - [@T4R0TARO](https://www.frontendmentor.io/profile/T4R0TARO)
+- Twitter - [@taro_code](https://twitter.com/taro_code)
