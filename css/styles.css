@@ -116,7 +116,7 @@ button:hover {
     border-bottom: 2px solid hsl(171, 66%, 37%);
 }
 .iosButton:hover {
-    background: hsl(171, 73%, 53%);
+    background: hsl(171, 77%, 39%);
 }
 .macButton {
     background: var(--light-blue);
