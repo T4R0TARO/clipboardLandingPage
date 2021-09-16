@@ -47,7 +47,7 @@ a {
 Mobile Styles
 =========================*/
 .hero {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0.74)), url(/images/bg-header-mobile.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0.74)), url(../images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100px;
@@ -265,7 +265,7 @@ Desktop Styles
 @media screen and (min-width: 886px){
 /* Hero Desktop */
 .hero {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0.74)), url(/images/bg-header-desktop.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0.74)), url(../images/bg-header-desktop.png);
     background-size: cover;
     width: 100%;
 }
