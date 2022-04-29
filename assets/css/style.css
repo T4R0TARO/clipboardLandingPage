@@ -1,0 +1,105 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-size: 28px;
+  color: hsl(213deg, 6%, 34%);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+p {
+  color: hsl(201deg, 11%, 66%);
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: url("/images/bg-header-desktop.png") no-repeat;
+  background-size: contain;
+  padding: 130px 75px;
+}
+
+.header__logo-img {
+  display: block;
+  margin: auto;
+  margin-bottom: 55px;
+}
+
+.header__text {
+  max-width: 690px;
+  margin: auto;
+  text-align: center;
+}
+
+header > p {
+  font-size: 18px;
+  margin-bottom: 50px !important;
+  line-height: 1.5;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-container .btn {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 15px 35px;
+  border-radius: 10rem;
+  border-bottom: 4px solid;
+  color: white;
+}
+
+.btn-container .btn-primary {
+  background: hsl(171deg, 66%, 44%);
+  margin-right: 10px;
+  border-color: hsl(171deg, 66%, 44%);
+  box-shadow: 0 10px 30px -5px lightblue;
+}
+
+.btn-container .btn-secondary {
+  background: hsl(233deg, 100%, 69%);
+  border-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0 10px 30px -5px lightblue;
+}
+
+.btn-container .btn:hover {
+  opacity: 0.9;
+}
+
+.btn-container .btn:focus {
+  outline: 3px dotted rgba(0, 0, 0, 0.3333333333);
+  outline-offset: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

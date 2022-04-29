@@ -1,157 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Frontend Mentor | Clipboard landing page</title>
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
 </head>
 <body>
-<!--Hero-->
+    <div class="container">
 
-<div role="banner" class="mainContainer">  
-
-  <div class="hero">
-
-    <img src="./images/logo.svg" class="mainLogo" alt="logo">
-    <h1>A history of everything you copy</h1>
-    <p>Clipboard allows you to track and organize everything you 
-      copy. Instantly access your clipboard on all your devices.</p>
-
-    <div class="topButtons">  
-      <button class="iosButton">Download for iOS</button>
-      <button class="macButton">Download for Mac</button>
-    </div>
-  </div>
-
-
-<!--Top Text-->
-<div role="main" class="keepTrack">
-    <h1>Keep track of your snippets</h1>
-    <p>Clipboard instantly stores any item you copy in the cloud, 
-    meaning you can access your snippets immediately on all your 
-      devices. Our Mac and iOS apps will help you organize everything.</p>
-</div>
-  
-<!-- col Section Container   -->
-<div role="main" class="colImgContainer"> 
-
-<!--Top Img-->
-  <div role="main" class="topImg">
-   <img src="./images/image-computer.png" alt="Desktop computer with a checkmark window">
-  </div>
-
-<!--Column Container-->
-  <div role="main" class="colContainer">   
-     <div class="colItem">  
-      <h2>Quick Search</h2>
-      <p>Easily search your snippets by content, category, web address, application, and more.</p>
-     </div>
-
-    <div class="colItem">   
-      <h2>iCloud Sync</h2>
-      <p>Instantly saves and syncs snippets across all your devices.</p>
+        <!-- HEADER -->
+        <header>
+            
+            <div class="header__logo">
+                <img src="./images/logo.svg" alt="#logo" class="header__logo-img">
+            </div>
+            
+            <h1 class="header__h1">A history of everything you copy</h1>
+            <p class="header__text">
+                Clipboard allows you to track and organize everything you 
+                copy. Instantly access your clipboard on all your devices.
+            </p>
+            
+            <div class="btn-container">
+                <button type="button" class="btn btn-primary">Download for iOS</button>
+                <button type="button" class="btn btn-secondary">Download for Mac</button>
+            </div>
+            
+        </header>
+        
     </div>
 
-    <div class="colItem">   
-      <h2>Complete History</h2>
-      <p>Retrieve any snippets from the first moment you started using the app.</p>
-    </div>  
-  </div>
-</div>  
-  
-<!--Mid Text-->
-  <div role="main" class="accessClipboard">
-    <h1>Access Clipboard anywhere</h2>
-    <p>Whether you’re on the go, or at your computer, you can access all your Clipboard 
-      snippets in a few simple clicks.</p>
-  </div>
-
-<!--Bottom Img-->
-   <div role="main" class="bottomImgContainer">
-     <img src="./images/image-devices.png" alt="smartphone and tablet with a checkmark window">
-   </div>
-
-<!--Bottom Text-->
-  <div role="main" class="superCharge">
-    <h1>Supercharge your workflow</h1>
-    <p>We’ve got the tools to boost your productivity.</p>
-  </div>
-
-<!--Row Container-->
-  <div role="main" class="rowContainer"> 
-   
-    <div class="rowItem"> 
-      <img src="./images/icon-blacklist.svg" alt="list icon">
-      <h2>Create blacklists</h2>
-      <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-   </div>
-    
-    <div class="rowItem">
-      <img src="./images/icon-text.svg" alt="text icon">
-      <h2>Plain text snippets</h2>
-      <p>Remove unwanted formatting from copied text for a consistent look.</p>
-    </div>
-    
-    <div class="rowItem">  
-      <img src="./images/icon-preview.svg" alt="preivew icon">
-      <h2>Sneak preview</h2>
-      <p>Quick preview of all snippets on your Clipboard for easy access.</p>
-    </div>
-  
-   </div>
- 
-<!--Company Logos Container-->
-    <div role="main" class="logosContainer">
-      <img src="./images/logo-google.png" alt="google logo">
-      <img src="./images/logo-ibm.png" alt="ibm logo">
-      <img src="./images/logo-microsoft.png" alt="microsoft logo">
-      <img src="./images/logo-hp.png" alt="hp logo">
-      <img src="./images/logo-vector-graphics.png" alt="vector logo">
-    </div>
-
-<!--Bottom Button Container  -->
-    <div role="main" class="bottomButtons">  
-      <h1>Clipboard for iOS and Mac OS</h1>
-      <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-        and you’re ready to start adding to your clipboard.</p>
-
-     <div class="botButtons"> 
-      <button class="iosButton">Download for iOS</button>
-      <button class="macButton">Download for Mac</button>
-    </div>
-    
-  </div>   
-
-<!--Footer -->
-     <div role="footer" class="mainfooter"> 
-       <img src="./images/logo.svg" alt="logo icon">
-       
-       <div class="footerLinks">
-        <a href="#">FAQs</a>
-        <a id="marginFix"href="#">Privacy Policy</a>
-        <a href="#">Install Guide</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Press Kit</a>
-       </div>
-       
-       <div role="contentinfo" class="socialIcons">
-         <a href="https://www.facebook.com/login/" aria-label="Facebook login page"><i class="icon fab fa-facebook-square fa-lg"></i></a>
-         <a href="https://twitter.com/?lang=en" aria-label="Twitter login page"><i class="icon fab fa-twitter fa-lg"></i></a>
-         <a href="https://www.instagram.com/accounts/login/" aria-label="Instagram login page"><i class="icon fab fa-instagram fa-lg"></i></a>
-       </div>
-       
-      </div> 
-
-  </div>  
-<script src="js/script.js"></script>
 </body>
 </html>
