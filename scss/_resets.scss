@@ -1,0 +1,44 @@
+@use './variables' as *;
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $default-font;
+}
+
+a {
+    display: inline-block; 
+    text-decoration: none;
+}
+
+h1,h2,h3 {
+    font-size: 28px;
+    color: hsl(213, 6%, 34%);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 23px;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}

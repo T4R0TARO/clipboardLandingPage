@@ -1,0 +1,32 @@
+{
+  "name": "clipboard-landing-page-master",
+  "version": "1.0.0",
+  "description": "mock company landing page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T4R0TARO/clipboardLandingPage.git"
+  },
+  "keywords": [
+    "landing-page",
+    "project"
+  ],
+  "author": "Joshua Manansala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T4R0TARO/clipboardLandingPage/issues"
+  },
+  "homepage": "https://github.com/T4R0TARO/clipboardLandingPage#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "autoprefixer": "^10.4.5",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
+  }
+}
