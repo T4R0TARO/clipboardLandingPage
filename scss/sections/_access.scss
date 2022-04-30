@@ -1,0 +1,21 @@
+@use '../variables' as *;
+
+// ACCESS SECTION
+
+.access {
+    padding: 75px 160px 0;
+    
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: 100px;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+}

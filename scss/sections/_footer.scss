@@ -1,0 +1,51 @@
+@use '../variables' as *;
+
+// FOOTER SECTION
+footer {
+    padding: 45px 160px;
+    background: hsl(220, 18%, 97%);
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
+}
+
+footer .footer__img {
+    width: 55px;
+}
+
+
+footer .links {
+    max-width:  500px;
+    display: grid; 
+    grid-template-columns: repeat(3, minmax(120px, 120px));
+    grid-gap: 20px 70px;
+}
+
+footer .links a {
+    font-size: 18px; 
+    font-weight: 500px;
+    color: darkblue;
+}
+
+footer .links a:hover {
+    color: cyan;
+}
+
+footer .links a:focus,
+.social-link a.focus {
+    outline: 3px dotted #0005;
+    outline-offset: 5px;
+}
+
+
+.social-links {
+    place-self: center flex-end;
+}
+
+.social-links a {
+    font-size: 27px;
+    color: darkblue;
+}
+
+.social-links a:not(:last-child){
+    margin-right: 20px;
+}

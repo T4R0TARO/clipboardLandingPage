@@ -3,7 +3,7 @@
 header {
     background: url('/images/bg-header-desktop.png') no-repeat;
     background-size: contain;
-    padding: 130px 75px;
+    padding: 130px 160px 75px;
 }
 
 .header__logo-img {
@@ -12,20 +12,21 @@ header {
     margin-bottom: 55px;
 }
 
-.header__text {
+:is(header, .about, .access, .features, .download) > p {
     max-width: 690px;
     margin: auto;
     text-align: center;
 }
 
 header > p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 50px !important;
     line-height: 1.5;
 }
 
 .btn-container {
     text-align: center;
+    
 }
 
 .btn-container .btn {
@@ -36,19 +37,20 @@ header > p {
     border-radius: 10rem;
     border-bottom: 4px solid;
     color: white;
+    border: none;
 }
 
 .btn-container .btn-primary {
     background: $strong-cyan;
     margin-right: 10px;
     border-color: $strong-cyan;
-    box-shadow: 0 10px 30px -5px lightblue;
+    box-shadow: 0 10px 30px -5px rgb(151, 187, 199);
 }
 
 .btn-container .btn-secondary {
     background: $light-blue;
     border-color: $light-blue;
-    box-shadow: 0 10px 30px -5px lightblue;
+    box-shadow: 0 10px 30px -5px rgb(151, 187, 199);
 }
 
 .btn-container .btn:hover {

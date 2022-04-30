@@ -1,0 +1,51 @@
+@use '../variables' as *;
+
+// ABOUT SECTION 
+.about {
+    padding: 75px 0;
+    h2 {
+        text-align: center;
+    }
+}
+
+
+
+.about > p {
+    margin-bottom: 75px;
+}
+
+.about__inner {
+    display: flex;
+}
+
+.about__inner .img-box {
+    width:  50%;
+    overflow: hidden;
+}
+
+.about__inner .img-box img {
+    display: block;
+    width: 105%;
+    height: auto;
+    transform: translateX(-5%);
+}
+
+.about__inner .card-group {
+    width: 50%; 
+    padding: 70px 110px;
+    
+}
+
+.about__inner .card-group .card:not(:last-child){
+    margin-bottom: 55px;
+}
+
+.about__inner .card-group .card h3 {
+    margin-bottom:  10px;
+}
+
+.about__inner .card-group .card p {
+    max-width: 350px;
+    font-size: 18px;
+    line-height: 2;
+}
