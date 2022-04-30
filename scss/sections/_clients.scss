@@ -1,0 +1,13 @@
+@use '../variables' as *;
+
+//CLIENTS SECTION
+ .clients {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-gap: 80px 100px;
+    padding: 85px 160px;
+ }
+
+ .clients img {
+  place-self: center;  
+ }
