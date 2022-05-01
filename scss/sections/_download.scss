@@ -2,11 +2,19 @@
 
 // DOWNLOAD SECTION 
 .download {
+    // FIXME: 
     padding: 70px 160px 150px;
     text-align: center;
 }
 
 .download > p {
     margin-bottom: 50px;   
+}
+
+
+@media screen and (max-width: 567px) {
+    .download {
+        padding: 70px 30px 160px;
+    }
 }
 

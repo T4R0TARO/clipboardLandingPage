@@ -2,7 +2,7 @@
 
 // FOOTER SECTION
 footer {
-    padding: 45px 160px;
+    padding: 45px $section-padding;
     background: hsl(220, 18%, 97%);
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
@@ -48,4 +48,48 @@ footer .links a:focus,
 
 .social-links a:not(:last-child){
     margin-right: 20px;
+}
+
+@media screen and (max-width: 992px){
+    footer .links {
+        grid-template-columns: repeat(2, minmax(120px, 120px));
+        grid-gap: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer {
+        grid-template-columns: 1fr;
+        place-items: center;
+        grid-gap: 50px 0;
+    }
+
+    footer .links{
+        max-width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-gap: 30px 40px;
+        text-align: center;
+    }
+
+    .social-links{
+        place-self: center;
+    }
+
+    .social-links a:not(:last-child){
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    footer .links {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+@media screen and (max-width: 453px){
+    footer {
+        padding: 70px 30px;
+        
+    }
 }
