@@ -5,9 +5,17 @@
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     grid-gap: 80px 100px;
-    padding: 85px 160px;
+   // FIXME:
+    padding: 85px 160px 160px;
  }
 
  .clients img {
   place-self: center;  
  }
+
+ @media screen and (max-width: 576px){
+   .clients {
+      grid-gap: 60px 100px;
+      padding: 85px 30px 160px;
+   }
+}

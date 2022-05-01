@@ -8,8 +8,6 @@
     }
 }
 
-
-
 .about > p {
     margin-bottom: 75px;
 }
@@ -48,4 +46,46 @@
     max-width: 350px;
     font-size: 18px;
     line-height: 2;
+}
+
+@media screen and (max-width: 1200px){
+    .about {
+        // FIXME:
+        padding: 75px 30px;
+    }
+    .about__inner {
+        flex-direction: column;
+    }
+    .about__inner .img-box {
+        width: 100%;
+    }
+    .about__inner .img-box img {
+        width: 80%;
+        margin: auto;
+        transform: translateX(0);
+    }
+
+    .about__inner .card-group {
+        width: 100%;
+        padding: 70px 0 0;
+        text-align: center;
+    }
+
+    .about__inner .card-group .card p {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .about__inner .img-box img {
+        width: 100%;
+    }
+
+    .about__inner .card-group .card p {
+        line-height: 1.5;
+    }
+
+    .about__h2 {
+        font-size: 28px;
+    }
 }

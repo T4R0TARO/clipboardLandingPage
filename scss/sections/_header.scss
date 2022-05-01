@@ -3,6 +3,7 @@
 header {
     background: url('/images/bg-header-desktop.png') no-repeat;
     background-size: contain;
+    // FIXME:
     padding: 130px 160px 75px;
 }
 
@@ -60,4 +61,24 @@ header > p {
 .btn-container .btn:focus {
     outline: 3px dotted #0005;
     outline-offset: 5px;
+}
+
+
+@media screen and (max-width: 805px){
+   
+    .btn-container .btn-primary {
+        margin-right: 0; 
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    header {
+        background: url(/images/bg-header-mobile.png) no-repeat;
+        background-size: 100%;
+        padding: 130px 30px 75px;
+    }
+    .header__h1 {
+        font-size: 28px;
+    }
 }

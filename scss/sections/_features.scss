@@ -3,6 +3,7 @@
 // FEATURES SECTION
 
 .features {
+    // FIXME:
     padding: 70px 160px;
     h2 {
         text-align: center;
@@ -38,3 +39,21 @@
     line-height: 2;
 }
 
+@media screen and (max-width: 692px){
+    .features {
+        padding: 70px 30px;
+    }
+
+    .features .card-group {
+        grid-template-columns: 1fr;
+        grid-gap: 60px 30px;
+    }
+
+    .card-group {
+
+    }
+
+    .features {
+        font-size: 28px;
+    }
+}

@@ -6,3 +6,18 @@ $dark-grayish-blue: hsl(210, 10%, 33%);
 $grayish-blue: hsl(201, 11%, 66%);
 
 $default-font: 'Bai Jamjuree', sans-serif;
+
+$section-padding: 160px;
+
+// @media screen and (max-width: 1200px){
+//     :root {
+//         // Spacing
+//         $section-padding: 80px;
+//     }
+// }
+
+// @media screen and (max-width: 576px){
+//     :root {
+//         $section-padding: 35px;
+//     }
+// }
