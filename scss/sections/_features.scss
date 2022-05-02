@@ -3,7 +3,6 @@
 // FEATURES SECTION
 
 .features {
-    // FIXME:
     padding: 70px 160px;
     h2 {
         text-align: center;
@@ -16,9 +15,13 @@
 
 .features .card-group {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-gap: 80px 30px;
     text-align: center;
+}
+
+.card-group {
+    place-self: center;
 }
 
 .features .card {
@@ -49,11 +52,14 @@
         grid-gap: 60px 30px;
     }
 
-    .card-group {
-
-    }
-
     .features {
         font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 796px){   
+    .features .card-group {
+        grid-template-columns: 1fr;
+        grid-gap: 60px 30px;
     }
 }
