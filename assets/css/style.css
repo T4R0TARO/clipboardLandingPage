@@ -258,9 +258,13 @@ header > p {
 
 .features .card-group {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   grid-gap: 80px 30px;
   text-align: center;
+}
+
+.card-group {
+  place-self: center;
 }
 
 .features .card {
@@ -295,9 +299,15 @@ header > p {
     font-size: 28px;
   }
 }
+@media screen and (max-width: 796px) {
+  .features .card-group {
+    grid-template-columns: 1fr;
+    grid-gap: 60px 30px;
+  }
+}
 .clients {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   grid-gap: 80px 100px;
   padding: 85px 160px 160px;
 }
@@ -338,7 +348,7 @@ footer .footer__img {
 }
 
 footer .links {
-  max-width: 500px;
+  max-width: 600px;
   display: grid;
   grid-template-columns: repeat(3, minmax(120px, 120px));
   grid-gap: 20px 70px;
@@ -407,7 +417,7 @@ footer .links a:focus,
     place-items: center;
   }
 }
-@media screen and (max-width: 453px) {
+@media screen and (max-width: 493px) {
   footer {
     padding: 70px 30px;
   }

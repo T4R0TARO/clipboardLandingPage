@@ -14,7 +14,7 @@ footer .footer__img {
 
 
 footer .links {
-    max-width:  500px;
+    max-width:  600px;
     display: grid; 
     grid-template-columns: repeat(3, minmax(120px, 120px));
     grid-gap: 20px 70px;
@@ -85,9 +85,11 @@ footer .links a:focus,
         grid-template-columns: 1fr;
         place-items: center;
     }
+
+
 }
 
-@media screen and (max-width: 453px){
+@media screen and (max-width: 493px){
     footer {
         padding: 70px 30px;
         
