@@ -2,7 +2,7 @@
 
 // FOOTER SECTION
 footer {
-    padding: 45px $section-padding;
+    padding: 45px 160px;
     background: hsl(220, 18%, 97%);
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
@@ -23,10 +23,11 @@ footer .links {
 footer .links a {
     font-size: 18px; 
     font-weight: 500px;
-    color: darkblue;
+    color: $dark-grayish-blue;
 }
 
-footer .links a:hover {
+footer .links a:hover,
+.social-links a:hover {
     color: cyan;
 }
 
@@ -43,7 +44,7 @@ footer .links a:focus,
 
 .social-links a {
     font-size: 27px;
-    color: darkblue;
+    color: $dark-grayish-blue;
 }
 
 .social-links a:not(:last-child){
