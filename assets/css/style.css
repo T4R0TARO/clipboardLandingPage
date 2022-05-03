@@ -38,6 +38,10 @@ p {
   color: hsl(201deg, 11%, 66%);
 }
 
+a {
+  transition: 0.25s ease;
+}
+
 .container {
   width: 100%;
   margin: auto;
@@ -98,6 +102,7 @@ header > p {
 
 .btn-container .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .btn-container .btn:focus {
@@ -109,6 +114,10 @@ header > p {
   .btn-container .btn-primary {
     margin-right: 0;
     margin-bottom: 25px;
+  }
+
+  .btn-container .btn {
+    padding: 15px 65px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -212,6 +221,7 @@ header > p {
 }
 .access {
   padding: 75px 30px 0;
+  margin-bottom: 80px;
 }
 .access h2 {
   text-align: center;
@@ -223,7 +233,6 @@ header > p {
 .access img {
   display: block;
   margin: auto;
-  margin-bottom: 160px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -357,10 +366,11 @@ footer .links {
 footer .links a {
   font-size: 18px;
   font-weight: 500px;
-  color: darkblue;
+  color: hsl(210deg, 10%, 33%);
 }
 
-footer .links a:hover {
+footer .links a:hover,
+.social-links a:hover {
   color: cyan;
 }
 
@@ -376,7 +386,7 @@ footer .links a:focus,
 
 .social-links a {
   font-size: 27px;
-  color: darkblue;
+  color: hsl(210deg, 10%, 33%);
 }
 
 .social-links a:not(:last-child) {

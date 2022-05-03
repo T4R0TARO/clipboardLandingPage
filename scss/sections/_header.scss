@@ -55,6 +55,7 @@ header > p {
 
 .btn-container .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .btn-container .btn:focus {
@@ -64,12 +65,20 @@ header > p {
 
 
 @media screen and (max-width: 805px){
-   
+    
     .btn-container .btn-primary {
         margin-right: 0; 
         margin-bottom: 25px;
     }
+
+    .btn-container .btn {
+        padding: 15px 65px;
+    }
+    
+    
+
 }
+
 
 @media screen and (max-width: 576px){
     header {
@@ -80,4 +89,6 @@ header > p {
     .header__h1 {
         font-size: 28px;
     }
+
+
 }
