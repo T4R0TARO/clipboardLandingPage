@@ -8,7 +8,6 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -33,82 +32,46 @@ Users should be able to:
 - Solution URL: [Git Repo](https://github.com/T4R0TARO/clipboardLandingPage)
 - Live Site URL: [Git Pages](https://t4r0taro.github.io/clipboardLandingPage/)
 
-## My process
-1. HTML STRUCTURE (Layout)
-2. CSS (Base Styles and Layout)
-3. CSS (Mobile Stlyes)
-4. CSS (Desktop Styles)
-5. Adjust Padding and Margin 
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
+- SASS/SCSS
+- Grid
 
 ### What I learned
 
-Footer
+RE:WORK
 ```html
-     <footer class="mainfooter"> 
-       <img src="./images/logo.svg" alt="logo icon">
-       
-       <div class="footerLinks">
-        <a href="#">FAQs</a>
-        <a id="marginFix"href="#">Privacy Policy</a>
-        <a href="#">Install Guide</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Press Kit</a>
-       </div>
-       
-       <div class="socialIcons">
-         <a href="https://www.facebook.com/login/"><i class="icon fab fa-facebook-square fa-lg"></i></a>
-         <a href="https://twitter.com/?lang=en"><i class="icon fab fa-twitter fa-lg"></i></a>
-         <a href="https://www.instagram.com/accounts/login/"><i class="icon fab fa-instagram fa-lg"></i></a>
-       </div>
-       
-     </footer> 
+<header>
+</header>
+
+<main>
+
+  <section>
+  </section>
+
+  <section>
+  </section>
+
+  <section>
+  </section>
+
+</main>
+
+<footer>
+</footer>
 ```
-Media Query for Desktop Style
+Rework in HTML structure. Organized the document by using header, main, section tag.
+
 ```css
-@media screen and (min-width: 1025px){
-/* Hero Desktop */
-.hero {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0.74)), url(.././images/bg-header-desktop.png);
-    background-size: cover;
-    width: 100%;
-}
-/* Desktop Layout */
-button {
-    margin-left: 20px;
-}
-.topButtons, .botButtons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;   
-}
-.rowContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-  .colImgContainer {
-    display: flex;
-    flex-direction: row;
-    
-}
-  .colContainer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-    margin-left: 100px;
+:is(header, .about, .access, .features, .download) > p {
+    max-width: 690px;
+    margin: auto;
+    text-align: center;
 }
 ```
+The :is() CSS psedo-class function takes a selector list as its argument, and selects any element that can be selected from that list. In this case, is() has a list of all the sections and checks if they have a child p tag. If any of them do then the p tag will take on the styles in the code block. 
 
 
 ## Author
