@@ -294,6 +294,11 @@ header > p {
   line-height: 2;
 }
 
+@media screen and (max-width: 567px) {
+  .features__h2 {
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 692px) {
   .features {
     padding: 70px 30px;
@@ -343,6 +348,10 @@ header > p {
 @media screen and (max-width: 567px) {
   .download {
     padding: 70px 30px 160px;
+  }
+
+  .download__h2 {
+    font-size: 28px;
   }
 }
 footer {
